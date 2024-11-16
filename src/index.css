@@ -1,3 +1,31 @@
+:root {
+  /* text colors */
+  --primary-light: #ffffff;
+  --primary-dark: #aaaaaa;
+
+  /* cyan */
+  --cyan-100: #43a478;
+  --cyan-200: #529979;
+  --cyan-300: #1a3d32;
+
+  /* background */
+  --background: #141414;
+  --foreground: #1e1e1e;
+
+  /* variables */
+  --border-radius: 25px;
+  --letter-spacing: 1px;
+  --transition: 0.3s ease-in-out all;
+
+  /* box shadow */
+  /* drop shadow */
+
+  /* anchor tag tansform */
+  link:hover {
+    color: #ffffff;
+  }
+}
+
 body {
-  background-color: #141414;
+  background-color: var(--background);
 }
