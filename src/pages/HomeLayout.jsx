@@ -1,12 +1,15 @@
 import React from "react";
 import IslandDash from "../components/IslandDash";
+import Wrapper from "../assets/wrappers/HomeLayout";
 import { Outlet } from "react-router-dom";
 const HomeLayout = () => {
   return (
-    <div>
+    <Wrapper>
       <IslandDash />
-      <Outlet />
-    </div>
+      <div className="page">
+        <Outlet />
+      </div>
+    </Wrapper>
   );
 };
 
