@@ -10,7 +10,7 @@
 
   /* background */
   --background: #141414;
-  --foreground: #1e1e1e;
+  --foreground: #202020;
 
   /* variables */
   --border-radius: 25px;
@@ -19,11 +19,6 @@
 
   /* box shadow */
   /* drop shadow */
-
-  /* anchor tag tansform */
-  link:hover {
-    color: #ffffff;
-  }
 }
 
 body {
