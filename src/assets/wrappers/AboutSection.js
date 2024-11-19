@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const Wrapper = styled.section`
-  height: 70vh;
+  margin-bottom: 21rem;
   .green-popup-grid {
     grid-template-rows: 1fr 1fr;
     position: absolute;

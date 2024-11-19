@@ -1,13 +1,29 @@
 import React from "react";
-
+import Wrapper from "../assets/wrappers/ProjectSection";
 const ProjectSection = () => {
   return (
-    <div>
+    <Wrapper>
       <h1>Projects</h1>
-      I’m a software developer fluent in design and programming. I have a knack
-      for problem solving and clean design. When I am not online, I enjoy
-      reading and creating assets in blender that I use for my other projects.
-    </div>
+      <div className="card">
+        {/* <div className="image card"></div> */}
+
+        <h2>Netlify</h2>
+        <p>
+          Sentiment analyzer is a website that can analyze more than 10, 000
+          YouTube comments.
+        </p>
+      </div>
+
+      <div className="card">
+        {/* <div className="image card"></div> */}
+
+        <h2>Netlify</h2>
+        <p>
+          Sentiment analyzer is a website that can analyze more than 10, 000
+          YouTube comments.
+        </p>
+      </div>
+    </Wrapper>
   );
 };
 
