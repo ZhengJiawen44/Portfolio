@@ -28,6 +28,7 @@ const Wrapper = styled.section`
     color: var(--primary-dark);
     stroke-width: 1.5;
     transition: transform 185ms ease-in-out;
+    padding: 0.2rem;
   }
   .dash-items:hover {
     color: var(--primary-light);

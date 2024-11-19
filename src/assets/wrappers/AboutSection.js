@@ -34,6 +34,13 @@ const Wrapper = styled.section`
     margin-top: 1px;
     justify-content: flex-start;
   }
+  a {
+    transition: transform 155ms ease-in-out;
+    &:hover {
+      color: white;
+      transform: scale(1.3);
+    }
+  }
 
   p.indented {
     margin-top: 5rem;

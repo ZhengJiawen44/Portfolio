@@ -2,6 +2,7 @@ import React from "react";
 import { TbBrandBluesky } from "react-icons/tb";
 import { TbBrandGithub } from "react-icons/tb";
 import { TbMail } from "react-icons/tb";
+import { TbBrandLinkedin } from "react-icons/tb";
 const Socials = () => {
   return (
     <div className="socials container">
@@ -13,6 +14,9 @@ const Socials = () => {
       </a>
       <a href="/">
         <TbMail className="logo" />
+      </a>
+      <a href="/">
+        <TbBrandLinkedin className="logo" />
       </a>
     </div>
   );
