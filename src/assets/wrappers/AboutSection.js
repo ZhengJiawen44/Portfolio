@@ -31,7 +31,7 @@ const Wrapper = styled.section`
     margin-bottom: 2px;
   }
   .socials {
-    margin-top: 1px;
+    margin-top: 0.7rem;
     justify-content: flex-start;
   }
   a {
@@ -46,7 +46,7 @@ const Wrapper = styled.section`
     margin-top: 5rem;
     margin-right: 30rem;
     margin-left: 2rem;
-    font-size: 1.5rem;
+    font-size: var(--text-medium);
   }
 
   @media screen and (max-width: 1500px) {

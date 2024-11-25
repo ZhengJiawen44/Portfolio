@@ -6,8 +6,9 @@ const Wrapper = styled.section`
     align-items: start;
     width: 100%;
     padding: 2rem;
+    box-sizing: border-box;
     p {
-      font-size: 1.55rem;
+      font-size: var(--text-medium);
       color: var(--primary-dark);
     }
     h2 {
@@ -33,12 +34,12 @@ const Wrapper = styled.section`
     padding: 4rem 4rem 0 4rem;
   }
   .content {
-    font-size: 1.55rem;
+    font-size: var(--text-medium);
     padding: 6rem 4rem 4rem 4rem;
   }
 
   .image {
-    box-shadow: -8px 8px 10px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-outset);
     border-radius: 15px;
     background-color: green;
     width: 10%;
@@ -59,9 +60,9 @@ const Wrapper = styled.section`
     display: flex;
   }
   .tag {
-    box-shadow: inset -5px 5px 6px 0px rgba(0, 0, 0, 0.64);
+    box-shadow: var(--shadow-inset);
     &:hover {
-      box-shadow: none;
+      box-shadow: inset -3px 3px 6px 0px rgba(0, 0, 0, 0.64);
       color: var(--primary-light);
     }
     display: flex;
@@ -73,7 +74,7 @@ const Wrapper = styled.section`
     margin-right: 1.4rem;
     border-radius: 22px;
     font-family: "Space Mono", monospace;
-    font-size: 1.1rem;
+    font-size: var(--text-small);
   }
   .logo {
     height: 1.2rem;
@@ -82,6 +83,14 @@ const Wrapper = styled.section`
 
   @media screen and (max-width: 1500px) {
     .image {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .image {
+      display: none;
+    }
+    .logo {
       display: none;
     }
   }

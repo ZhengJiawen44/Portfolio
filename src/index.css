@@ -19,10 +19,20 @@
   --letter-spacing: 1px;
   --transition: 0.3s ease-in-out all;
 
-  /* box shadow */
-  /* drop shadow */
-}
+  /* text font size */
+  --text-small: 1.1rem;
+  --text-medium: 1.55rem;
+  --text-large: 2rem;
 
+  /* box shadow */
+  --shadow-outset: -8px 8px 10px 1px rgba(0, 0, 0, 0.4);
+
+  /*shadow-inset */
+  --shadow-inset: inset -5px 5px 6px 0px rgba(0, 0, 0, 0.64);
+}
+* {
+  transition: all 0.2s ease;
+}
 body {
   background-color: var(--background);
 }
@@ -66,11 +76,6 @@ p {
 .logo {
   height: 28px;
   width: 28px;
-  stroke-width: 1.5;
-}
-.logo-secondary {
-  height: 24px;
-  width: 24px;
   stroke-width: 1.5;
 }
 
