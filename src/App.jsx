@@ -4,6 +4,9 @@ import { Home } from "./pages";
 import { Blog } from "./pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+//shared context??
+//separate context
+//load
 const App = () => {
   const router = createBrowserRouter([
     {

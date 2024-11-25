@@ -1,7 +1,8 @@
 :root {
   /* text colors */
   --primary-light: #ffffff;
-  --primary-dark: #aaaaaa;
+  --primary-medium: #aaaaaa;
+  --primary-dark: hsl(0, 0%, 40%);
 
   /* cyan */
   --cyan-100: #43a478;
@@ -11,6 +12,7 @@
   /* background */
   --background: #141414;
   --foreground: #202020;
+  --foreground-dark: #1d1d1d;
 
   /* variables */
   --border-radius: 25px;
@@ -66,6 +68,11 @@ p {
   width: 28px;
   stroke-width: 1.5;
 }
+.logo-secondary {
+  height: 24px;
+  width: 24px;
+  stroke-width: 1.5;
+}
 
 .container {
   display: flex;
@@ -73,14 +80,13 @@ p {
   justify-content: center;
   gap: 1rem;
 }
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  background-color: var(--foreground);
+.projectCard {
   border-radius: 25px;
+  width: 100%;
+  margin-bottom: 2rem;
+
   &:hover {
-    background-color: #272727;
+    background-color: var(--foreground);
+    cursor: pointer;
   }
 }
