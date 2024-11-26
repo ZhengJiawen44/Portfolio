@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Wrapper from "../assets/wrappers/IslandDash";
 import TranslateDash from "./TranslateDash";
 import { TbHome } from "react-icons/tb";
@@ -7,7 +7,10 @@ import { TbTool } from "react-icons/tb";
 import { TbNotebook } from "react-icons/tb";
 import { TbMail } from "react-icons/tb";
 import DashItems from "./DashItems";
+
 const IslandDash = () => {
+  useEffect(() => {});
+
   return (
     <Wrapper>
       <div className="dashboard">
