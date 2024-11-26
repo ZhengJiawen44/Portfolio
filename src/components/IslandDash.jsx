@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
+import { useObserver } from "../utils/useObserver";
 import Wrapper from "../assets/wrappers/IslandDash";
 import TranslateDash from "./TranslateDash";
 import { TbHome } from "react-icons/tb";
@@ -9,11 +10,12 @@ import { TbMail } from "react-icons/tb";
 import DashItems from "./DashItems";
 
 const IslandDash = () => {
-  useEffect(() => {});
+  const [dashboardRef, isVisible] = useObserver();
+  console.log(isVisible);
 
   return (
     <Wrapper>
-      <div className="dashboard">
+      <div className="dashboard" ref={dashboardRef}>
         <DashItems icon={<TbHome className="dash-items" />} label="Home" />
         <DashItems
           icon={<TbBriefcase className="dash-items" />}
