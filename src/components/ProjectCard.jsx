@@ -39,7 +39,6 @@ const ProjectCard = ({ title, desc, content, tags }) => {
                     ) : (
                       <TbNews className="logo" />
                     )}
-
                     {tag}
                   </a>
                 ))

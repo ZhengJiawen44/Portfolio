@@ -22,6 +22,7 @@ const Wrapper = styled.section`
     align-items: start;
     margin-top: 1.5rem;
     column-gap: 1.5rem;
+    box-shadow: var(--shadow-outset);
     h2 {
       font-size: 3rem;
     }
@@ -61,14 +62,17 @@ const Wrapper = styled.section`
   }
   .tag {
     box-shadow: var(--shadow-inset);
-    &:hover {
-      box-shadow: inset -3px 3px 6px 0px rgba(0, 0, 0, 0.64);
-      color: var(--primary-light);
-    }
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 0.7rem;
+    width: auto;
+    
+    &:hover {
+      box-shadow: inset -3px 3px 6px 0px rgba(0, 0, 0, 0.64);
+      color: var(--primary-light);
+      padding: 0.7rem 1.6rem;
+    }
     background-color: var(--background);
     padding: 0.7rem 1.2rem 0.7rem 1.2rem;
     margin-right: 1.4rem;
@@ -76,7 +80,9 @@ const Wrapper = styled.section`
     font-family: "Space Mono", monospace;
     font-size: var(--text-small);
   }
-  .logo {
+
+  }
+  .tag .logo {
     height: 1.2rem;
     width: 1.2rem;
   }
